@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="器件,物料,质量," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、案例情况自2018年3月份起，生产线上陆续有发现触点铜柱在SMT焊接后，出现歪斜、浮高（0.104mm，标准为6mm）、虚焊松动脱落现象（如下图所示），导致生产效率严重受影响，不能及时交货。同时发现已出货产品已产生1起客诉（2018年11月11日经销商投诉模组安装使用4个月后有底壳铜柱掉落的现象，197个箱有3块灯板不良），后续存在品质隐患和客诉风险，给公司造成经济和品牌损失。  二、调查回访">
+<meta name="keywords" content="器件,物料,质量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="案例：一颗铜柱的故事">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019-11-18-pillar-alternative-case&#x2F;index.html">
+<meta property="og:site_name" content="Innovating via IPD">
+<meta property="og:description" content="一、案例情况自2018年3月份起，生产线上陆续有发现触点铜柱在SMT焊接后，出现歪斜、浮高（0.104mm，标准为6mm）、虚焊松动脱落现象（如下图所示），导致生产效率严重受影响，不能及时交货。同时发现已出货产品已产生1起客诉（2018年11月11日经销商投诉模组安装使用4个月后有底壳铜柱掉落的现象，197个箱有3块灯板不良），后续存在品质隐患和客诉风险，给公司造成经济和品牌损失。  二、调查回访">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-problem-1.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-problem-2.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-problem-3.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-solder-drawing.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-materail-analyse.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;welding-sthength-analyse.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;soldering-process-analyse.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;soldering-process-change.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-pull-stress.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-push-stress.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;equipment-for-pillar-smt.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-pad-redesign.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-mechanics-redesign.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;nci-team-members.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;nci-process.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;competency-of-rd-and-dnp.png">
+<meta property="og:updated_time" content="2019-11-20T09:49:10.996Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;img&#x2F;pillar-problem-1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019-11-18-pillar-alternative-case/"/>
+
+
+
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+  <title>案例：一颗铜柱的故事 | Innovating via IPD</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Innovating via IPD</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-首页">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-战略">
+          <a href="/categories/strategy/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-eye"></i> <br />
+            
+            战略
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-组织">
+          <a href="/categories/organization/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            组织
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-业务">
+          <a href="/categories/business/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-compass"></i> <br />
+            
+            业务
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-人才">
+          <a href="/categories/talent/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-microphone"></i> <br />
+            
+            人才
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-案例">
+          <a href="/categories/case/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tree"></i> <br />
+            
+            案例
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-关于">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-gear"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" target="_blank" rel="noopener" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019-11-18-pillar-alternative-case/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Alex Huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Innovating via IPD">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">案例：一颗铜柱的故事</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-18T02:10:55+08:00">
+                2019-11-18
+              </time>
+            
+			
+			
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/consult/" itemprop="url" rel="index">
+                    <span itemprop="name">consult</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="一、案例情况"><a href="#一、案例情况" class="headerlink" title="一、案例情况"></a>一、案例情况</h3><p>自2018年3月份起，生产线上陆续有发现触点铜柱在SMT焊接后，出现歪斜、浮高（0.104mm，标准为6mm）、虚焊松动脱落现象（如下图所示），导致生产效率严重受影响，不能及时交货。同时发现已出货产品已产生1起客诉（2018年11月11日经销商投诉模组安装使用4个月后有底壳铜柱掉落的现象，197个箱有3块灯板不良），后续存在品质隐患和客诉风险，给公司造成经济和品牌损失。</p>
+<p><img src="/img/pillar-problem-1.png" alt=""><br><img src="/img/pillar-problem-2.png" alt=""><br><img src="/img/pillar-problem-3.png" alt=""></p>
+<h3 id="二、调查回访"><a href="#二、调查回访" class="headerlink" title="二、调查回访"></a>二、调查回访</h3><p>为了解事情发生的背景信息，找到触点铜柱歪斜、浮高、虚焊松动脱落的根本原因，以对症下药解决问题。质量部QA组织进行了详细调研。</p>
+<h4 id="1-结构部小洪"><a href="#1-结构部小洪" class="headerlink" title="1. 结构部小洪"></a>1. 结构部小洪</h4><p>关于铜柱的事情，说起来都是泪。设计上一直是通过焊接方式将铜柱固定在PCB上，这个方案已经用了2年多，从来没有出过任何问题，毕竟只是一颗铜柱嘛！在结构件里面属于最简单的部件之一。</p>
+<p>就在半年多前，我收到部门经理的信息，要将铜柱改为自动焊接方式，和PCB焊接起来使用，说是生产更改了生产工艺，要求铜柱也更改规格，就是要求供应商更改镀锡量，便于生产自动化加工。</p>
+<h4 id="2-验证部小朱"><a href="#2-验证部小朱" class="headerlink" title="2. 验证部小朱"></a>2. 验证部小朱</h4><p>我之前都没有听说过这个所谓的“新”铜柱，也没有通知我们验证，虽然公司安排验证部负责物料认证，但我们主要是针对关键物料认证，这些“小”物料，都是各个部门自己负责的。</p>
+<h4 id="3-工艺部小谭"><a href="#3-工艺部小谭" class="headerlink" title="3. 工艺部小谭"></a>3. 工艺部小谭</h4><p>生产部因需要提高效率和产能，对设备进行了自动化改造，是工艺部门组织进行的。更改工艺路线后，部分原来手工焊接的工序调整为SMT焊接和THT焊接，并且统一改为无铅工艺，因此有一部分物料为满足自动化焊接要求，就必须更改规格和工艺参数，铜柱应该是其中涉及到的一颗物料。</p>
+<p>在此次客户投诉发生后，工艺部进行了自查，该铜柱认证中没有工艺部参与的记录，所以我们根本就不知晓供应商更改后的工艺参数是否满足要求。</p>
+<h4 id="4-采购部小王"><a href="#4-采购部小王" class="headerlink" title="4. 采购部小王"></a>4. 采购部小王</h4><p>铜柱更改了工艺参数，除了更改镀锡量，其他规格与更改前的铜柱完全一样。和供应商确认，提到物料承认书要求此铜柱必须在发货后3个月内使用（否则镀锡层氧化，会影响其可焊性）。</p>
+<h4 id="5-品质部小左"><a href="#5-品质部小左" class="headerlink" title="5. 品质部小左"></a>5. 品质部小左</h4><p>IQC查了库存记录，此批铜柱入库已经半年，中间没有成品订单一直没有使用，经目视检验发现焊接区域已经氧化，上线前没有专门针对该物料超期存储进行检验，故而发到产线加工并发货。</p>
+<p>SQE反查了设计变更单，没有找到针对该铜柱的测试报告。</p>
+<h4 id="6-仓储部小林"><a href="#6-仓储部小林" class="headerlink" title="6. 仓储部小林"></a>6. 仓储部小林</h4><p>对于超期存储需要特别检验的物料，我们在发料前都会通知SQE进行确认，经过会签后再发料到产线。这颗铜柱不在特别检验物料清单中，所以我们按照常规情况进行处理。（库房人员一般认为结构件物料库存半年以下对使用没有太大的影响）</p>
+<h4 id="7-研发管理部小罗"><a href="#7-研发管理部小罗" class="headerlink" title="7. 研发管理部小罗"></a>7. 研发管理部小罗</h4><p>设计变更单上提到的变更原因是为提高生产效率，因此需要更改原铜柱规格，并为此新铜柱申请了新编码，BOM也更改为新编码。</p>
+<p>物料认证单上有规格变更确认，但因为是结构件，没有发给工艺部门确认可焊性；所有的物料描述元素表上，均没有存储期这一属性。</p>
+<h3 id="三、问题分析"><a href="#三、问题分析" class="headerlink" title="三、问题分析"></a>三、问题分析</h3><h4 id="1-铜柱歪斜及浮高现象分析"><a href="#1-铜柱歪斜及浮高现象分析" class="headerlink" title="1. 铜柱歪斜及浮高现象分析"></a>1. 铜柱歪斜及浮高现象分析</h4><p>铜柱焊接完成锡冷却后， 铜柱无法发送歪斜或者浮高，故只能发生于焊接过程。按铜柱焊接工艺路线进行分析：</p>
+<center>PCB板刷锡膏—>铜柱贴板—>回流焊—>PCBA和外壳装配</center>
+
+<ul>
+<li>PCB板刷锡膏，锡膏厚度在0.13~0.15mm范围</li>
+<li>铜柱采用动贴装设备贴合到PCB上，自动贴装设备存在一定的误差及震动</li>
+<li>回流焊过程中，铜柱压合到锡膏深度存在一定偏差</li>
+</ul>
+<p><img src="/img/pillar-solder-drawing.png" alt=""></p>
+<h4 id="2-铜柱虚焊松动脱落现象分析"><a href="#2-铜柱虚焊松动脱落现象分析" class="headerlink" title="2. 铜柱虚焊松动脱落现象分析"></a>2. 铜柱虚焊松动脱落现象分析</h4><p>影响铜柱焊接强度的因素有：铜柱表面镀层、焊接面积大小、焊接工艺和安装工艺。</p>
+<h5 id="2-1-原材料分析"><a href="#2-1-原材料分析" class="headerlink" title="2.1 原材料分析"></a>2.1 原材料分析</h5><p>将不良铜柱（虚焊松动脱落）与正常铜柱进行对比，发现不良铜柱镀层表面严重氧化发黑，导致不易上锡产生虚焊，影响焊接强度。如下图所示。</p>
+<p><img src="/img/pillar-materail-analyse.png" alt=""></p>
+<p>经调查确认，发黑铜柱库龄超6个月，为计划性备料，未及时消耗。</p>
+<h5 id="2-2-焊接强度分析"><a href="#2-2-焊接强度分析" class="headerlink" title="2.2 焊接强度分析"></a>2.2 焊接强度分析</h5><p>原设计焊盘为宽度1.45mm圆环，而铜柱焊接面则为0.75mm宽度的圆环，实际焊接面积偏小，焊接后实测拉力强度≤7.4kgf（标准：10kgf）。</p>
+<p><img src="/img/welding-sthength-analyse.png" alt=""></p>
+<h5 id="2-3-铜柱焊接工艺分析"><a href="#2-3-铜柱焊接工艺分析" class="headerlink" title="2.3 铜柱焊接工艺分析"></a>2.3 铜柱焊接工艺分析</h5><p>铜柱通过自动设备放置到预先涂有锡膏的PCB上，铜柱设计有凹槽，与PCB之间留有空隙，焊接完成后，会有空气困于铜柱与PCB之间。当模组正常工作时候，气体受热膨胀，从内部对焊接产生破坏。</p>
+<p><img src="/img/soldering-process-analyse.png" alt=""></p>
+<h5 id="2-4-铜柱工艺路线变更分析"><a href="#2-4-铜柱工艺路线变更分析" class="headerlink" title="2.4 铜柱工艺路线变更分析"></a>2.4 铜柱工艺路线变更分析</h5><p>该款铜柱原采用手工方式进行焊接，后由于生产提升效率导入SMT自动化贴装及焊接设备，故要求铜柱改为SMT焊接工艺。2种方式焊接要求不同（左图为手工焊接，右图为自动化焊接），对铜柱及焊盘的工艺参数也就不同，采用原铜柱直接加锡的方式无法完全满足使用需求。</p>
+<p><img src="/img/soldering-process-change.png" alt=""></p>
+<h5 id="2-5-结构应力分析"><a href="#2-5-结构应力分析" class="headerlink" title="2.5 结构应力分析"></a>2.5 结构应力分析</h5><ol>
+<li>纵向应力</li>
+</ol>
+<p>该铜柱用于连接PCBA和底壳结构件，属于硬件和结构的接口部分。考虑到结构件/PCBA形变、物料公差和焊接可靠性，铜柱纵向受到拉伸应力。</p>
+<p><img src="/img/pillar-pull-stress.png" alt=""></p>
+<ol start="2">
+<li>横向应力</li>
+</ol>
+<p>当铜柱焊接偏移中心太多或者因锡膏量不均匀发生歪斜时，铜柱会受到底壳的侧向推力。</p>
+<p><img src="/img/pillar-push-stress.png" alt=""></p>
+<h4 id="3-3-分析总结"><a href="#3-3-分析总结" class="headerlink" title="3.3 分析总结"></a>3.3 分析总结</h4><ol>
+<li>触点铜柱歪斜及浮高原因： <ul>
+<li>自动化设备加工误差；</li>
+<li>锡膏压合不均匀。</li>
+</ul>
+</li>
+<li>触点铜柱虚焊松动脱落原因：<ul>
+<li>铜柱放置时间太久，导致表面镀层氧化发黑；</li>
+<li>焊接面积设计值偏小；</li>
+<li>焊接过程产生困气；</li>
+<li>触点铜柱焊接工艺路线变更，主导部门未召集各部门对PCB、铜柱、结构进行充分评估原设计是否可满足自动化及使用要求；</li>
+<li>底壳设计未完全消除应力作用。</li>
+</ul>
+</li>
+</ol>
+<h4 id="3-4-技术对策"><a href="#3-4-技术对策" class="headerlink" title="3.4 技术对策"></a>3.4 技术对策</h4><ol>
+<li>铜柱贴板之后，回流焊之前，增加压铜柱治具，解决铜柱自动贴装产生的歪斜及高度不一致问题。</li>
+</ol>
+<p><img src="/img/equipment-for-pillar-smt.png" alt=""></p>
+<ol start="2">
+<li>PCB焊盘增加隔断设计，消除困气。</li>
+</ol>
+<p><img src="/img/pillar-pad-redesign.png" alt=""></p>
+<ol start="3">
+<li>底壳结构更改，设计铜柱支撑台阶，加大底壳过孔，消除应力。</li>
+</ol>
+<p><img src="/img/pillar-mechanics-redesign.png" alt=""></p>
+<h3 id="四、根因分析和对策"><a href="#四、根因分析和对策" class="headerlink" title="四、根因分析和对策"></a>四、根因分析和对策</h3><h4 id="1-组织"><a href="#1-组织" class="headerlink" title="1. 组织"></a>1. 组织</h4><p><strong>主要问题：</strong></p>
+<ol>
+<li>组织职能分散，岗位职责模糊。</li>
+<li>缺乏跨功能团队运作指引，各环节沟通不畅，部门墙太厚。</li>
+<li>流程中的角色职责不清晰或缺失，会签流于形式。</li>
+</ol>
+<p><strong>解决措施：</strong></p>
+<ol>
+<li>优化组织设计，重新定义技术、测试、物料认证、工艺和质量相关的岗位职责。</li>
+<li>建立NCI（物料认证）团队，按物料族开展物料认证。</li>
+<li>确定流程各角色职责，并扩展到对应的岗位职责中，建立可以有效履职的专业能力。</li>
+</ol>
+<p><img src="/img/nci-team-members.png" alt=""></p>
+<h4 id="2-流程"><a href="#2-流程" class="headerlink" title="2. 流程"></a>2. 流程</h4><p><strong>主要问题：</strong></p>
+<ol>
+<li>无正式的物料认证流程，仅有《新物料样品确认申请单》和《产品试产管理办法》（含物料小批量）支撑。</li>
+<li>技术变更流程：<ul>
+<li>发起人、提供方案人和验证人均在研发部门，缺乏内部第三方对验证结果进行再确认。</li>
+<li>增加技术变更引起的牵连变更（设计/工艺/物料等），以及验证报告。</li>
+</ul>
+</li>
+</ol>
+<p><strong>解决措施：</strong></p>
+<ol>
+<li>建立与NCI团队匹配的物料认证流程，涵盖从需求到导入量产的全过程。</li>
+<li>优化技术变更流程，使得方案提供者、验证者和确认者“三权分立”，由内部第三方确认技术变更的验证报告。</li>
+</ol>
+<p><img src="/img/nci-process.png" alt=""></p>
+<h4 id="3-标准-规范-查检表"><a href="#3-标准-规范-查检表" class="headerlink" title="3. 标准/规范/查检表"></a>3. 标准/规范/查检表</h4><p><strong>主要问题：</strong></p>
+<ol>
+<li>无针对不同类型物料的认证规范。</li>
+<li>物料描述项只有技术属性，没有管理属性。</li>
+<li>PCB封装库与实际不符，缺乏管理。</li>
+<li>工艺没参与物料认证，因此缺乏各类物料的工艺认证规范。</li>
+<li>结构与硬件接口的设计容差标准不合理。</li>
+</ol>
+<p><strong>解决措施：</strong></p>
+<ol>
+<li>针对不同物料族，分别建立认证规范和标准，指导新物料和替代物料认证。</li>
+<li>建立物料描述性元素表，考虑到物料管控需要，与采购、计划、仓储等部门讨论，增加“存储条件、存储期、……”等管理属性。</li>
+<li>重新梳理PCB封装库，与物料认证结合，并在设计时作为反向检查项。</li>
+<li>按NCI团队，增加各物料族的工艺认证规范/标准。如铜柱推力标准。</li>
+<li>优化结构设计规范，细化接口容差设计标准。</li>
+</ol>
+<h4 id="4-人员能力"><a href="#4-人员能力" class="headerlink" title="4. 人员能力"></a>4. 人员能力</h4><p><strong>主要问题：</strong></p>
+<ol>
+<li>专业分工不合理，能力成长受限，无法对结果承担责任。</li>
+<li>工作观念不到位，“铁路警察，各管一段”，缺乏全局意识。</li>
+</ol>
+<p><strong>解决措施：</strong></p>
+<ol>
+<li>针对特定的职位/角色，梳理任职要求，识别有担当的员工，“压担子”。</li>
+<li>设立流程Owner，跨功能运作“责权利”共担，授予Owner考核权和指挥权。</li>
+</ol>
+<p><img src="/img/competency-of-rd-and-dnp.png" alt=""></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+	
+	<div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">
+            -------------本文结束
+            <i class="fa fa-paw"></i>
+            感谢您的阅读-------------
+        </div>
+    
+</div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%99%A8%E4%BB%B6/" rel="tag"># 器件</a>
+          
+            <a href="/tags/%E7%89%A9%E6%96%99/" rel="tag"># 物料</a>
+          
+            <a href="/tags/%E8%B4%A8%E9%87%8F/" rel="tag"># 质量</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+             
+              <a href="/2018-12-31-introduction-to-ipd/" rel="next" title="关于IPD">
+                关于IPD <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Alex Huang</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+		  
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、案例情况"><span class="nav-number">1.</span> <span class="nav-text">一、案例情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、调查回访"><span class="nav-number">2.</span> <span class="nav-text">二、调查回访</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-结构部小洪"><span class="nav-number">2.1.</span> <span class="nav-text">1. 结构部小洪</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-验证部小朱"><span class="nav-number">2.2.</span> <span class="nav-text">2. 验证部小朱</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-工艺部小谭"><span class="nav-number">2.3.</span> <span class="nav-text">3. 工艺部小谭</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-采购部小王"><span class="nav-number">2.4.</span> <span class="nav-text">4. 采购部小王</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-品质部小左"><span class="nav-number">2.5.</span> <span class="nav-text">5. 品质部小左</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-仓储部小林"><span class="nav-number">2.6.</span> <span class="nav-text">6. 仓储部小林</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-研发管理部小罗"><span class="nav-number">2.7.</span> <span class="nav-text">7. 研发管理部小罗</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、问题分析"><span class="nav-number">3.</span> <span class="nav-text">三、问题分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-铜柱歪斜及浮高现象分析"><span class="nav-number">3.1.</span> <span class="nav-text">1. 铜柱歪斜及浮高现象分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-铜柱虚焊松动脱落现象分析"><span class="nav-number">3.2.</span> <span class="nav-text">2. 铜柱虚焊松动脱落现象分析</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-原材料分析"><span class="nav-number">3.2.1.</span> <span class="nav-text">2.1 原材料分析</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-焊接强度分析"><span class="nav-number">3.2.2.</span> <span class="nav-text">2.2 焊接强度分析</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-铜柱焊接工艺分析"><span class="nav-number">3.2.3.</span> <span class="nav-text">2.3 铜柱焊接工艺分析</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-4-铜柱工艺路线变更分析"><span class="nav-number">3.2.4.</span> <span class="nav-text">2.4 铜柱工艺路线变更分析</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-5-结构应力分析"><span class="nav-number">3.2.5.</span> <span class="nav-text">2.5 结构应力分析</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-分析总结"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 分析总结</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-4-技术对策"><span class="nav-number">3.4.</span> <span class="nav-text">3.4 技术对策</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、根因分析和对策"><span class="nav-number">4.</span> <span class="nav-text">四、根因分析和对策</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-组织"><span class="nav-number">4.1.</span> <span class="nav-text">1. 组织</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-流程"><span class="nav-number">4.2.</span> <span class="nav-text">2. 流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-标准-规范-查检表"><span class="nav-number">4.3.</span> <span class="nav-text">3. 标准/规范/查检表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-人员能力"><span class="nav-number">4.4.</span> <span class="nav-text">4. 人员能力</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2012 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alex Huang</span>
+
+  
+</div>
+
+<!--
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
